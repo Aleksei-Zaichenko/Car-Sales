@@ -10,6 +10,6 @@ export const addFeature = (featureId, featureName, featurePrice) => {
  };
 };
 
-export const removeFeature = () => {
-    return { type: REMOVE_FEATURE };
+export const removeFeature = (featureId, featurePrice) => {
+    return { type: REMOVE_FEATURE, payloadfeatureId: featureId, payloadfeaturePrice: featurePrice };
 };
